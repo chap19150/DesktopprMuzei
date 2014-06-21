@@ -1,6 +1,7 @@
 DesktopprMuzei
 ==============
-![Icon](https://github.com/chap19150/DesktopprMuzei/blob/master/DesktopprMuzei/src/main/ic_launcher-web.png)
+![Icon](https://raw.githubusercontent.com/chap19150/DesktopprMuzei/master/DesktopprMuzei/src/main/ic_launcher-web.png)
+
 **DesktopprMuzei** is an open source extension for the [Muzei Live Wallpaper](http://muzei.co) created by [Roman Nurik](roman.nurik.net). This extension leverages the API provided by the excellent wallpapers website [Desktoppr](https://www.desktoppr.co) to grab a random SFW wallpaper and provides it to Muzei to set as the Android device's wallpaper.
 
 ## Download
