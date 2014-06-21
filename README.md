@@ -20,11 +20,9 @@ You can find the integral text of the Apache 2.0 license here:
 http://www.apache.org/licenses/LICENSE-2.0
 
 ## License
-*Romain Guy Muzei* is released under the *Apache 2.0* license.
+*DesktopprMuzei* is released under the *Apache 2.0* license.
 
 ```
-Copyright 2014 Frakbot (Sebastiano Poggi and Francesco Pontillo)
-
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
