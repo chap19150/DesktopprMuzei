@@ -32,6 +32,7 @@ import retrofit.RetrofitError;
 
 import static com.pixelperfectapps.desktopprmuzei.DesktopprService.Photo;
 import static com.pixelperfectapps.desktopprmuzei.DesktopprService.PhotosResponse;
+import static retrofit.RestAdapter.LogLevel.*;
 
 public class DesktopprArtSource extends RemoteMuzeiArtSource {
     private static final String TAG = DesktopprArtSource.class.getSimpleName();
@@ -55,7 +56,7 @@ public class DesktopprArtSource extends RemoteMuzeiArtSource {
 
         RestAdapter restAdapter = new RestAdapter.Builder()
                 .setServer("https://api.desktoppr.co")
-
+                .setLogLevel(FULL)
                 .setErrorHandler(new ErrorHandler() {
                     @Override
                     public Throwable handleError(RetrofitError retrofitError) {
@@ -71,7 +72,10 @@ public class DesktopprArtSource extends RemoteMuzeiArtSource {
                 .build();
 
         DesktopprService service = restAdapter.create(DesktopprService.class);
-        PhotosResponse response = service.getPopularPhotos();
+        Random random = new Random();
+        int randomInt = random.nextInt(4000);
+        PhotosResponse response;
+        response = service.getPopularPhotos(randomInt);
 
         if (response == null || response.response == null) {
             throw new RetryException();
@@ -83,7 +87,7 @@ public class DesktopprArtSource extends RemoteMuzeiArtSource {
             return;
         }
 
-        Random random = new Random();
+        random = new Random();
         Photo photo;
         String token;
         while (true) {
@@ -100,7 +104,7 @@ public class DesktopprArtSource extends RemoteMuzeiArtSource {
                 .imageUri(Uri.parse(photo.image.url))
                 .token(token)
                 .viewIntent(new Intent(Intent.ACTION_VIEW,
-                        Uri.parse("https://api.desktoppr.co/wallpapers/" + photo.id)))
+                        Uri.parse("https://desktoppr.co/wallpapers/" + photo.id)))
                 .build());
 
         scheduleUpdate(System.currentTimeMillis() + ROTATE_TIME_MILLIS);

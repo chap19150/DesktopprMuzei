@@ -11,13 +11,13 @@
     <application
         android:allowBackup="true"
         android:label="@string/app_name"
-        android:icon="@drawable/ic_source"
+        android:icon="@drawable/logo"
         android:debuggable="false">
 
         <service android:name=".DesktopprArtSource"
             android:label="@string/source_name"
             android:description="@string/source_description"
-            android:icon="@drawable/ic_source">
+            android:icon="@drawable/logo">
             <intent-filter>
                 <action android:name="com.google.android.apps.muzei.api.MuzeiArtSource" />
             </intent-filter>

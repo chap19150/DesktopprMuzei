@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pre-dex-items>
+
+    <item
+        dex="/Users/Applico/Development/Android/github/DesktopprMuzei/DesktopprMuzei/build/intermediates/pre-dexed/debug/retrofit-1.3.0-829cb9f444ba533b970588457dc26ff336cdd641.jar"
+        jar="/Users/Applico/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit/retrofit/1.3.0/9c54af761b67b60a1be7a7a8e96c6235f136456b/retrofit-1.3.0.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="9c54af761b67b60a1be7a7a8e96c6235f136456b"/>
+    <item
+        dex="/Users/Applico/Development/Android/github/DesktopprMuzei/DesktopprMuzei/build/intermediates/pre-dexed/debug/muzei-api-1.0-2fbbc0f3e68001a19dbb4ef6ba13b38644fe3bba.jar"
+        jar="/Users/Applico/.gradle/caches/modules-2/files-2.1/com.google.android.apps.muzei/muzei-api/1.0/462586fbdc48d42b73a3db3e81ed7944313820cc/muzei-api-1.0.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="462586fbdc48d42b73a3db3e81ed7944313820cc"/>
+    <item
+        dex="/Users/Applico/Development/Android/github/DesktopprMuzei/DesktopprMuzei/build/intermediates/pre-dexed/debug/gson-2.2.4-f279162973147f03df10989cfebccd59545a4d2b.jar"
+        jar="/Users/Applico/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.2.4/a60a5e993c98c864010053cb901b7eab25306568/gson-2.2.4.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="a60a5e993c98c864010053cb901b7eab25306568"/>
+
+</pre-dex-items>

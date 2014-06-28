@@ -19,10 +19,11 @@ package com.pixelperfectapps.desktopprmuzei;
 import java.util.List;
 
 import retrofit.http.GET;
+import retrofit.http.Query;
 
 interface DesktopprService {
     @GET("/1/wallpapers")
-    PhotosResponse getPopularPhotos();
+    PhotosResponse getPopularPhotos(@Query("page") int pageNumber);
 
     static class PhotosResponse {
         List<Photo> response;
@@ -31,15 +32,8 @@ interface DesktopprService {
     static class Photo {
         int id;
         String uploader;
-        //String image_url;
-        //String name;
-        //User user;
         Image image;
     }
-
-//    static class User {
-//        String fullname;
-//    }
 
     static class Image{
         String url;
