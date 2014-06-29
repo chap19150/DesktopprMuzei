@@ -20,7 +20,7 @@
             <intent-filter>
                 <action android:name="com.google.android.apps.muzei.api.MuzeiArtSource" />
             </intent-filter>
-            <meta-data android:name="color" android:value="#fa0" />
+            <meta-data android:name="color" android:value="#a4c739" />
         </service>
 
     </application>
